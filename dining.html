@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="resources/jquery.mobile-1.4.5.css">
+<script src="resources/jquery-2.1.4.js"></script>
+
+<script>
+$(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+});
+</script>
+
+<script src="resources/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+  <div data-role="header">
+    <h1>iEatRPI</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <h1>Dining Halls</h1>
+    <h2>Commons</h2>
+    <h2>Russell Sage</h2>
+    <h2>Blitman</h2>
+    <h2>BARH</h2>
+  </div>
+
+  <div data-role="footer">
+    <img src="resources/logo (resize).jpg"/>  
+  </div>
+</div> 
+
+</body>
+</html>

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<link rel="stylesheet" href="resources/jquery.mobile-1.4.5.css">
+<script src="resources/jquery-2.1.4.js"></script>
+
+<script>
+$(document).bind('mobileinit',function(){
+    $.mobile.changePage.defaults.changeHash = false;
+    $.mobile.hashListeningEnabled = false;
+    $.mobile.pushStateEnabled = false;
+});
+</script>
+
+<script src="resources/jquery.mobile-1.4.5.js"></script>
+</head>
+<body>
+
+<div data-role="page">
+  <div data-role="header">
+    <h1>iEatRPI</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p style="text-align:center;">Welcome to iEat!!</h2>
+    <form data-ajax="false" method="post" action="dining.html">
+      <div class="ui-field-contain">
+        <label for="rcsid">RCS ID:</label>
+        <input type="text" name="rcsid" id="rcsid" data-clear-btn="true">
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" data-clear-btn="true">
+        <input type="submit" value="Submit" data-icon="check" data-iconpos="right" data-inline="true">
+      </div>
+      <p style="text-align:center;">Forgot your password?</p>
+	</form>
+  </div>
+
+  <div data-role="footer">
+    <img src="resources/logo (resize).jpg"/>
+  </div>
+</div> 
+
+</body>
+</html>
